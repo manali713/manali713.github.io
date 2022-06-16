@@ -25,15 +25,15 @@
   
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
+  
   $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
+    'host' => 'localhot',
+    'username' => 'root',
+    'password' => '',
+    'port' => ''
   );
-  */
-
+  
+  INSERT INTO `contact` (`Name`, `email`, `mes`) VALUES ('hjm ab', 'dcdsfcv', 'cdfcdv');
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['message'], 'Message', 10);
