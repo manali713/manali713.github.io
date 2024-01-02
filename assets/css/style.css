@@ -566,6 +566,11 @@ section {
 }
 .skills .progress-bar-wrap {
   background: #ffffff;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
 }
 .skills .progress-bar {
   width: 1px;
@@ -1114,3 +1119,4 @@ section {
 #footer .credits a {
   color: #34b7a7;
 }
+

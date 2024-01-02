@@ -2,32 +2,334 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Manali</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <title>Manali</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
+
+    <style>
+      .projectintro{
+        background-color:  rgba(255, 255, 255, 0.1);
+            border-radius: 17px;
+            padding: 25px;
+            height: fit-content;
+            font-family:  sans-serif;
+            font-size: larger;
+            text-align: center;
+            
+            margin-bottom: 30px;
+            display: flex;
+           
+            align-items: center;
+            justify-content: center ;
+            box-shadow: 0 5px 15px rgba(54, 48, 48, 0.2);
+            transition: transform 0.3s ease-in-out;
+
+      }
+      
+      
+      
+      html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(45deg, #0e1c10, #0a130e);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 50px;
+            color: white;
+        }
+
+        .project {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            padding: 30px;
+            height: fit-content;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: normalf ;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+        }
+
+        .project img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        .project h3 {
+            margin: 2px;
+            padding: 10px;
+        }
+
+        .project p {
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .project li{
+            margin: 10px;
+            font-size: large;
+        }
+
+        @media (max-width: 976px) {
+            .project {
+                padding: 10px;
+                height: 431px;
+            }
+
+            .project img {
+                width: 30%;
+            }
+
+            .project-details {
+                padding-top: 10px;
+            }
+
+            .project-title {
+                font-size: 1.5rem; /* Adjust as needed */
+            }
+
+            .project-list {
+                padding-left: 20px; /* Adjust as needed */
+            }
+
+            .project-point {
+                font-size: 0.9rem; /* Adjust as needed */
+            }
+        }
+
+
+        @media (max-width: 774px) {
+            .project {
+                padding: 10px;
+                height: 530px;
+            }
+
+            .project img {
+                width: 35%;
+            }
+
+        
+        }
+        @media (max-width: 670px) {
+            .project {
+                padding: 5px;
+                
+                height: 430px;
+
+            }
+
+            .project img {
+                width: 30%;
+                height: 30%;
+            }
+
+            .project li{
+                margin: 8px;
+                font-size: medium;
+            }
+            .project h3 {
+                font-size: large;
+                margin: 1px;
+                padding: 5px;
+            }
+            .project p{
+                padding: 1px;
+            }
+            .projectintro{
+              
+                  font-size: medium;
+                  
+      
+            }
+
+
+        
+        }
+
+        @media (max-width: 555px) {
+            .project {
+                padding: 5px;
+                
+                height: 500px;
+
+            }
+
+            .project img {
+                width: 30%;
+                height: 30%;
+            }
+            .projectintro{
+              
+              font-size: medium;
+              
+  
+        }
+
+            .project li{
+                margin: 8px;
+                font-size: medium;
+            }
+            .project h3 {
+                font-size: large;
+                margin: 1px;
+                padding: 5px;
+            }
+            .project p{
+                padding: 1px;
+            }
+
+
+        
+        }
+        @media (max-width: 555px) {
+            .project {
+                padding: 5px;
+                
+                height: 500px;
+
+            }
+            .projectintro{
+              
+              font-size: medium;
+              
+  
+        }
+
+            .project img {
+                width: 30%;
+                height: 30%;
+            }
+
+            .project li{
+                margin: 8px;
+                font-size: medium;
+            }
+            .project h3 {
+                font-size: large;
+                margin: 1px;
+                padding: 5px;
+            }
+            .project p{
+                padding: 1px;
+            }
+
+            .h2 {
+                font-size: large;
+            }
+
+
+        }
+
+        /* Media Query for Mobile */
+/* Media Query for Mobile */
+@media   (max-width: 500px) {
+    .project {
+        
+        flex-direction: column;
+        padding: 4px;
+        width: 100%;
+        height: fit-content;
+       
+    }
+
+    .project img {
+        
+        width: 120px;
+        height: 120px;
+    }
+    .projectintro{
+              
+      font-size: medium;
+      
+
+}
+
+    .project-details {
+        margin-bottom: 20px; /* Adjust the margin as needed */
+    }
+
+    .project li{
+        margin: 7px;
+        font-size: small;
+    }
+    .project h3 {
+        font-size: large;
+        margin: 1px;
+        padding: 5px;
+    }
+    .project p{
+        padding: 1px;
+    }
+    }
+    .project services{
+        padding: 1px;
+    }
+    .container {
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 20px;
+        
+    }
+    .section-title h2 {
+        font-size: x-large;
+    }
+    .project:hover {
+      transform: translateY(-10px);
+  }
+
+
+
+    
+
+
+
+
+    </style>
+
+
+    <!-- =======================================================
   * Template Name: Kelly - v4.7.0
   * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
   * Author: BootstrapMade.com
@@ -37,140 +339,353 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Manali</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            <h1 class="logo me-auto me-lg-0"><a href="index.html">Manali</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a class="active" href="services.html">Services</a></li>
-          
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a class="active" href="services.html">Projects</a></li>
 
-      <div class="header-social-links">
-        <a href="https://instagram.com/manali_713?utm_medium=copy_link" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/manalik713/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-      </div>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
 
-    </div>
+            <div class="header-social-links">
+                <a href="https://instagram.com/manali_713?utm_medium=copy_link" class="instagram"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/manalik713/" class="linkedin"><i
+                        class="bi bi-linkedin"></i></i></a>
+            </div>
 
-  </header><!-- End Header -->
-
-  <main id="main">
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Services</h2>
-          <p></p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-blue">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
-                <i class="bx bxl-dribbble"></i>
-              </div>
-              <h4><a href="">Business analyst</a></h4>
-              <p>I have quite good experience in this field.</p>
-            </div>
-          </div>
+    </header><!-- End Header -->
 
-          <div class="row">
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="100">
-              <div class="icon-box iconbox-blue">
-                <div class="icon">
-                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                  </svg>
-                  <i class="bx bxl-dribbble"></i>
+    <main id="main">
+
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2 style="color: #d0dee8">Projects</h2>
+                    <p></p>
                 </div>
-                <h4><a href="">Web development</a></h4>
-                <p>I have preparted this resume with HTML/CSS/JS/PHP.</p>
-              </div>
-            </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-orange ">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="bx bx-file"></i>
-              </div>
-              <h4><a href="">Social Media handling</a></h4>
-              <p>Instagram and facebook account handling and promoting.</p>
-            </div>
-          </div>
+                
+                <div class="projects">
+                  <div class="projectintro">
+                    
+                      I am eager to share my extensive project experience as a business analyst, having immersed
+                      myself in diverse domains and collaborated with various clients. My journey spans across
+                      different industries, each presenting unique challenges and opportunities. From e-commerce
+                      platforms to sports management and financial services, I've played a pivotal role in
+                      analyzing requirements, managing stakeholders, and ensuring successful project outcomes. Let
+                      me take you through my multifaceted project experiences and the valuable insights gained
+                      along the way.
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-orange ">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="bx bx-file"></i>
-              </div>
-              <h4><a href="">UI / UX Designer</a></h4>
-              <p>Instagram and facebook account handling and promoting.</p>
-            </div>
-          </div>
+                      </div>
+                  
+                  
+                    <div class="project">
+                        <img src="/manali713.github.io/assets/img/Ecommerce-mobile-app-scaled.png" alt="Project 1">
+                        <div class="project-details">
+                            <h3 class="project-title">E-commerce Buy n Sell App</h3>
+                            <p>
+                                <ul class="project-list">
+                                    <li>Requirement gathering and analysis; created a clear and comprehensive proposal document.</li>
+                                    <li>Collaborated with the team leader and UI/UX designer to discuss the flow and create the UI of the project.</li>
+                                    <li>Orchestrated the development of two distinct apps, focusing on user engagement, product viewing, and business functionality for boutiques.</li>
+                                    <li>Successfully integrated the PhonePe payment gateway for secure and efficient payment processing.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="project">
+                        <img src="/manali713.github.io/assets/img/neuball.webp" alt="Project 1">
+                        <div class="project-details">
+                            <h3 class="project-title">Sports Contest Management App</h3>
+                            <p>
+                                <ul class="project-list">
+                                    <li>Analyzed requirements for a complex app similar to Dream 11, focusing on point calculation systems.</li>
+                                    <li>Managed documents, functional and technical analysis, creating flow, and client communication.</li>
+                                    <li>Implemented OTP-based login, integrated the "Sports Monk" API for real-time match listings, and developed a virtual wallet system.</li>
+                                    <li>Facilitated fair prize distribution among users based on their tiers, creating an admin panel.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Repeat the above structure for each project with appropriate details -->
+                    
+                    <div class="project">
+                        <img src="/manali713.github.io/assets/img/socialmedia.jpeg" alt="Project 1">
+                        <div class="project-details">
+                            <h3 class="project-title">Family Media Sharing App</h3>
+                            <p>
+                                <ul class="project-list">
+                                    <li>Managed and analyzed a secure platform with features like OTP-based login and subscription plans for media uploads.</li>
+                                    <li>Integrated iOS and Android In-App Subscription features for seamless payments.</li>
+                                    <li>Provided a user-friendly interface with options for family management, content creation, and post editing.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Repeat the above structure for each project with appropriate details -->
+                    
+                    <div class="project">
+                        <img src="/manali713.github.io/assets/img/healthcare.jpeg" alt="Project 1">
+                        <div class="project-details">
+                            <h3 class="project-title">Ticket Booking and Appointment Scheduling App - Admin Enhancement</h3>
+                            <p>
+                                <ul class="project-list">
+                                    <li>Conducted critical analysis and Jira story management for enhancing the app's admin-doctor side software functionalities.</li>
+                                    <li>Worked on frontend improvements, while backend APIs were provided by the client.</li>
+                                    <li>Managed a complex project with dynamic views and automations.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Repeat the above structure for each project with appropriate details -->
+                    
+                    <div class="project">
+                        <img src="/manali713.github.io/assets/img/fin.jpeg" alt="Project 1">
+                        <div class="project-details">
+                            <h3 class="project-title">Mobile Wallet App - Fintech</h3>
+                            <p>
+                                <ul class="project-list">
+                                    <li>Worked as a business analyst on various aspects, creating flow diagrams, including service provider and merchant integration, new versions management, document creation and management BRD, and change requests.</li>
+                                    <li>Worked with MySQL database, ASP .NET, draw.io, API analysis, and many more.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Repeat the above structure for each project with appropriate details -->
+                    
+                    <div class="project">
+                        <img src="/manali713.github.io/assets/img/1686289560_Patement-gateway-working.png" alt="Project 1">
+                        <div class="project-details">
+                            <h3 class="project-title">Payment Integration with Service Provider</h3>
+                            <p>
+                                <ul class="project-list">
+                                    <li>Analyzed APIs and documentation provided by the client for seamless integration.</li>
+                                    <li>Created Software Requirement Specifications and facilitated sprint planning using Jira project management tool.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Repeat the above structure for each project with appropriate details -->
+                    
+                    <div class="project">
+                        <img src="/manali713.github.io/assets/img/goldtrading.jpeg" alt="Project 1">
+                        <div class="project-details">
+                            <h3 class="project-title">Gold Trading Dashboard App</h3>
+                            <p>
+                                <ul class="project-list">
+                                    <li>Analyzed project documentation, conducted in-depth price alerts analysis using Firebase, and performed database analysis.</li>
+                                    <li>Collaborated in meetings to address challenges and ensure the successful execution of the project.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Repeat the above structure for each project with appropriate details -->
+                    
+                    <div class="project">
+                        <img src="/manali713.github.io/assets/img/small business.jpeg" alt="Project 1">
+                        <div class="project-details">
+                            <h3 class="project-title">App for Small Businesses - Financial Services</h3>
+                            <p>
+                                <ul class="project-list">
+                                    <li>Implemented UI enhancements with additional functionalities such as purchasing unique codes and paying for bills for different services.</li>
+                                    <li>Conducted technical and functional analysis, changes to the existing system, and meetings with project managers and developers.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Repeat the above structure for each project with appropriate details -->
+                    
+                    <div class="project">
+                        <img src="/manali713.github.io/assets/img/insuranse.jpeg" alt="Project 1">
+                        <div class="project-details">
+                            <h3 class="project-title">Insurance Purchase App</h3>
+                            <p>
+                                <ul class="project-list">
+                                    <li>Worked on the insurance purchase app, including requirements gathering, client meetings, designing system flow, and UI creation.</li>
+                                    <li>Meetings with developers and leaders to finalize the technical flow, creating backend flow diagrams as the system is dynamic and handled by the admin panel.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Repeat the above structure for each project with appropriate details -->
+                    
+                    <div class="project">
+                        <img src="/manali713.github.io/assets/img/helt-care.jpeg" alt="Project 1">
+                        <div class="project-details">
+                            <h3 class="project-title">Health Care App</h3>
+                            <p>
+                                <ul class="project-list">
+                                    <li>Creating an app for the existing system for hospitals to manage client data.</li>
+                                    <li>Working on data collecting, gathering part as backend API is already created.</li>
+                                    <li>Front-end task planning, Trello milestone listing, and creating workflow.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Repeat the above structure for each project with appropriate details -->
+                    
+                    <div class="project">
+                        <img src="/manali713.github.io/assets/img/other.jpeg" alt="Project 1">
+                        <div class="project-details">
+                            <h3 class="project-title">Other Project</h3>
+                            <p>
+                                <ul class="project-list">
+                                    <li>During my experience as a business analyst, I have worked on a variety of projects. I have included one of the main projects, which is developed and deployed. </li>
+                                    <li>This content is shared solely for informational purposes and does not disclose
+                                      proprietary or confidential information.</li>
+                                    <li>Thank you so much!</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Add more projects here -->
+                </div>
+                
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-pink">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bx bx-tachometer"></i>
-              </div>
-              <h4><a href="">web designer</a></h4>
-              <p>Using Adobe XD i can create i view for your website.</p>
-            </div>
-          </div>
 
-          
+
+
+
+
+
+
+
+            </div>
+        </section><!-- End Services Section -->
 
         </div>
 
-      </div>
-    </section><!-- End Services Section -->
+    </main><!-- End #main -->
 
-  </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
 
-  <!-- ======= Footer ======= -->
-  
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+
+    <script src="js/jquery-1.11.3.min.js"></script> <!-- jQuery (https://jquery.com/download/) -->
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <!-- Tether for Bootstrap, http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap (http://v4-alpha.getbootstrap.com/) -->
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+
+    <!-- Templatemo scripts -->
+    <script>
+
+        var bigNavbarHeight = 90;
+        var smallNavbarHeight = 68;
+        var navbarHeight = bigNavbarHeight;
+
+        $(document).ready(function () {
+
+            var topOffset = 180;
+
+            $(window).scroll(function () {
+
+                if ($(this).scrollTop() > topOffset) {
+                    $(".navbar-container").addClass("sticky");
+                }
+                else {
+                    $(".navbar-container").removeClass("sticky");
+                }
+
+            });
+
+            /* Single page nav
+            -----------------------------------------*/
+
+            if ($(window).width() < 992) {
+                navbarHeight = smallNavbarHeight;
+            }
+
+            $('#tmNavbar').singlePageNav({
+                'currentClass': "active",
+                offset: navbarHeight,
+                filter: ':not(.external)'
+            });
+
+
+            /* Collapse menu after click 
+               http://stackoverflow.com/questions/14203279/bootstrap-close-responsive-menu-on-click
+            ----------------------------------------------------------------------------------------*/
+
+            $('#tmNavbar').on("click", "a", null, function () {
+                $('#tmNavbar').collapse('hide');
+            });
+
+            // Handle nav offset upon window resize
+            $(window).resize(function () {
+                if ($(window).width() < 992) {
+                    navbarHeight = smallNavbarHeight;
+                } else {
+                    navbarHeight = bigNavbarHeight;
+                }
+
+                $('#tmNavbar').singlePageNav({
+                    'currentClass': "active",
+                    offset: navbarHeight,
+                    filter: ':not(.external)'
+                });
+            });
+
+
+            /*  Scroll to top
+                http://stackoverflow.com/questions/5580350/jquery-cross-browser-scroll-to-top-with-animation
+            --------------------------------------------------------------------------------------------------*/
+            $('#go-to-top').each(function () {
+                $(this).click(function () {
+                    $('html,body').animate({ scrollTop: 0 }, 'slow');
+                    return false;
+                });
+            });
+
+        });
+
+    </script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 
