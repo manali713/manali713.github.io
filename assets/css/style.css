@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #014f47;
+  background: #0e453e;
   box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.08);
   z-index: 997;
   padding: 15px 0;
@@ -148,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 15px;
 }
 .header-social-links a {
-  color: #262020;
+  color: #ffffff;
   padding-left: 6px;
   display: inline-block;
   line-height: 0px;
